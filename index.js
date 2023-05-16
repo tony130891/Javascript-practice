@@ -30,7 +30,9 @@ const computerSelection = getComputerChoice();
 
 const game = () => {
   for (let i = 0; i < 5; i++) {
-    const playerSelection = prompt("choose the option");
+    const playerSelection = prompt(
+      "choose the option, paper, rock or scissors"
+    ).toLowerCase;
     const computerSelection = getComputerChoice();
     playRound(playerSelection, computerSelection);
   }
